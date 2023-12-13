@@ -180,7 +180,7 @@ BEGIN
             SET @u1 = RAND();
             SET @u2 = RAND();
             SET @z0 = SQRT(-2 * LOG(@u1)) * COS(2 * PI() * @u2);
-            SET @meanHour = 15;
+            SET @meanHour = 6;
             SET @stdDevHour = 1; -- Standard deviation for the normal distribution
             SET @randomHour = ROUND(@meanHour + @stdDevHour * @z0, 1);
             -- Round to one decimal place
